@@ -3,7 +3,7 @@ import './service.css'
 
 const Services = () => {
     return (
-        <div >
+        <div id='service' className='mb-5'>
             <div className='container pt-5 mb-5 w-75 m-auto' >
                 <h1 className='text-center mb-5' style={{ color: '#0c58a5', fontSize: '42px' }}>Services</h1>
                 <div className='row row-cols-1 row-cols-md-2 g-5'>

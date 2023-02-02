@@ -3,7 +3,7 @@ import './Banner.css';
 
 const Banner = () => {
     return (
-        <div>
+        <div id='banner'>
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade ">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -14,21 +14,21 @@ const Banner = () => {
                     <div class="carousel-item active">
                         <img src="./banner1.jpg" class="d-block w-100" style={{ marginTop: '-240px',opacity:'0.4' }} alt="..." />
                         <div class="carousel-caption d-none d-md-block" style={{ paddingBottom: '200px' }}>
-                            <h1 className='text-white' style={{ fontSize: '42px' }}>A Customer First Approach <br />
+                            <h1 className='text-white' style={{ fontSize: '42px' , fontFamily:'Outfit, sans-serif',fontWeight:'600'}}>A Customer First Approach <br />
                                 to Cloud Transformation</h1>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./banner2.jpg" class="d-block w-100" style={{ marginTop: '-110px',opacity:'0.4' }} alt="..." />
                         <div class="carousel-caption d-none d-md-block" style={{ paddingBottom: '200px' }}>
-                            <h1 className='text-white' style={{ fontSize: '42px' }}>We move beyond ideas to digital innovation using cloud <br />technology
+                            <h1 className='text-white' style={{ fontSize: '42px', fontFamily:'Outfit, sans-serif',fontWeight:'600' }}>We move beyond ideas to digital innovation using cloud technology
                             </h1>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./banner3.jpg" class="d-block w-100" style={{ marginTop: '-420px',opacity:'0.4' }} alt="..." />
                         <div class="carousel-caption d-none d-md-block" style={{ paddingBottom: '200px' }}>
-                            <h1 className='text-white' style={{ fontSize: '42px' }}>Migrate, Modernize<br/>
+                            <h1 className='text-white' style={{ fontSize: '42px' , fontFamily:'Outfit, sans-serif',fontWeight:'600'}}>Migrate, Modernize<br/>
                                 and Optimize on AWS</h1>
                         </div>
                     </div>

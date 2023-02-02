@@ -1,12 +1,13 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 const Navbar = () => {
     return (
         <div className='pb-5'>
             <nav className="navbar navbar-expand-lg bg-light fixed-top mb-5 shadow">
                 <div class="container">
-                    <Link class="navbar-brand d-flex align-item-center" to="/">
+                    <Link class="navbar-brand d-flex align-item-center" activeClass="active" to="banner" spy={true} smooth={true} offset={50} duration={500}>
                         <img src="logo.png" className='pt-2 pb-2' alt="Bootstrap" width="250" />
                         {/* <h1 style={{color:'#0c58a5', fontFamily:'Montserrat, sans-serif',fontSize:'24px',fontWeight:'800' ,margin:'0',padding:'0'}}>CLOUD <span className='text-warning' style={{color:'#ffb700'}}>360</span><br/><span style={{fontWeight:'600',fontSize:'22px'}}>Services Ltd.</span></h1> */}
                     </Link>
@@ -15,14 +16,21 @@ const Navbar = () => {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                                <Link class="nav-link ms-3 pt-2 pb-2" to="/service">Service</Link>
+                            <li class="nav-item">
+                                <Link className='nav-link me-3' activeClass="active" to="service" spy={true} smooth={true} offset={50} duration={500}>
+                                    Service
+                                </Link>
+
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link ms-3 pt-2 pb-2" to="/about">Company</Link>
+                            <Link className='nav-link me-3' activeClass="active" to="company" spy={true} smooth={true} offset={50} duration={500}>
+                                    Company
+                                </Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link ms-3 pt-2 pb-2" to="/contact-us">Contact Us</Link>
+                            <Link  className='nav-link me-3' activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500}>
+                                    Contact Us
+                                </Link>
                             </li>
                             {/* <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
