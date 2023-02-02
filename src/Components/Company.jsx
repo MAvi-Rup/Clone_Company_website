@@ -31,7 +31,7 @@ const Company = () => {
                 options={{
                     height: 20,
                     amplitude: 20,
-                    speed: 0.15,
+                    speed: 0.45,
                     points: 3
                 }}
             />

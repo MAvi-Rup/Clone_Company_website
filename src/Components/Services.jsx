@@ -31,7 +31,7 @@ const Services = () => {
 
 
                     </div>
-                    <div className='col'>
+                    <div className='col' id='card'>
                         <div className='me-5'>
                             <div className='d-flex align-items-center mb-5'>
                                 <img src="http://www.cloud360services.com/images/cloud-migration-icon.svg" width='80px' alt="" srcset="" />
@@ -43,7 +43,7 @@ const Services = () => {
 
 
                     </div>
-                    <div className='col'>
+                    <div className='col' id='card'>
                         <div className='me-5'>
                             <div className='d-flex align-items-center mb-5'>
                                 <img src="http://www.cloud360services.com/images/cloud-migration-icon.svg" width='80px' alt="" srcset="" />
